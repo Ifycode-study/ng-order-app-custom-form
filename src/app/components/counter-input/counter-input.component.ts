@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, forwardRef } from '@angular/core';
-import { NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'app-counter-input',
@@ -13,7 +13,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
     }
   ]
 })
-export class CounterInputComponent implements OnInit {
+export class CounterInputComponent implements OnInit, ControlValueAccessor {
   // @ts-ignore
   @Input() min: number;
   // @ts-ignore
