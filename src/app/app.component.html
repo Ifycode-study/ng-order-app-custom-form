@@ -8,21 +8,19 @@
   </div>
   <div class="form-control">
     <label>Amount of white wine: </label>
-    <input type="number" formControlName="white_wine" />
+    <app-counter-input formControlName="white_wine"></app-counter-input>
   </div>
   <div class="form-control">
     <label>Amount of red wine: </label>
-    <input type="number" formControlName="red_wine" />
+    <app-counter-input formControlName="red_wine"></app-counter-input>
   </div>
   <div class="form-control">
     <label>Amount of beer: </label>
-    <input type="number" formControlName="beer" />
+    <app-counter-input formControlName="beer"></app-counter-input>
   </div>
   <div class="form-control">
     <button>Place order</button>
   </div>
-
-  <app-counter-input></app-counter-input>
 
   <pre class="form-values">
     {{ form.value | json }}
